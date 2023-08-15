@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srikanth - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    body{
+      background-color: rgb(0,0,33);
+      color:white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18,18,62);
+    }
+
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover{
+      color: rgb(153,153,226);
+      font-size: 1.1rem;
+    }
+
+    main hr{
+      border: 0;
+      background-color: #9c97f1;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    .left{
+      font-size: 1.5rem;
+    }
+    
+   
+    .purple{
+      color: rgb(170,107,228);
+    }
+
+  
+
+
+    
+
+
+   /* Center the grid */
+   .certificates {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+
+  /* Style for each division */
+  .division {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Display items in a column layout */
+    align-items: center; /* Center items horizontally */
+  }
+
+  /* Heading for each division */
+  .division h3 {
+    margin-bottom: 10px;
+  }
+
+  /* Style for each certificate item */
+  .certificate {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%; /* Set the width of each certificate */
+  }
+
+  .certificate img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Caption */
+  .certificate .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .certificate:hover .caption {
+    opacity: 1;
+  }
+
+  /* Adjust the grid layout for certificates */
+  .division .certificate-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Maximum of 4 certificates per row */
+    gap: 20px;
+  }
+ 
+  .intro h2 {
+    text-align: center;
+    padding-top: 20px; /* Add padding at the top */
+  }
+
+  /* Style the paragraph */
+  .intro p{
+    padding: 20px 20px; /* Add padding to the sides */
+    line-height: 1.5; /* Add space between sentences */
+  }
+
+  .horizontal-rule {
+    border-top: 1px dashed #ccc; /* Dashed line style */
+    
+    padding-top: 10px; /* Remove padding at the top */
+    padding-bottom: 10px; /* Remove padding at the bottom */
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Srikanth's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" onclick="return false;">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  
+  <section class="intro">
+    <div >
+      <h2>ABOUT ME</h2>
+    </div>
+    <div >
+      <p>
+        Hello, I'm Srikanth, a final-year Computer Science Engineering student specialized in Data Science at CMRIT.
+        I value gratitude, forgiveness, honesty, humility, and hope as the foundation of my character.
+        With skills in coding, web development, communication, and social intelligence, I bridge technology and understanding.
+        I find inspiration in anime and diverse YouTube content, fostering personal growth.
+        Mentorship holds a special place in my heart; both giving and receiving it fuel my journey.
+        While I embrace self-doubt as a stepping stone, I aim to contribute positively and evolve continuously.
+      </p>
+    </div>
+  </section>
+
+  <div class="horizontal-rule"></div>
+  <div class="intro"><h2>MY CERTIFICATIONS</h2></div>
+
+  <section class="section2">
+    <div class="certificates">
+      <div class="division">
+        <h3 class="center_heading">Cisco Cybersecurity Certification</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Cisco Net Acad Cyber Security.pdf" target="_blank">
+              <img src="./Thumbnails/Cisco Net Acad Cyber Security_page-0001.jpg" alt="Cybersecurity Certificate">
+              <div class="caption">Introduction to Cybersecurity</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+        </div>
+      </div>
+    
+      <!-- Add more divisions for other categories -->
+      <div class="division">
+        <h3 class="center_heading">UC Davis Profession Skills Certifications</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Coursera ESI 3.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera ESI 3_page-0001.jpg" alt="Profession Skills Certificate">
+              <div class="caption">Emotional and Social Intelligence</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+          <div class="certificate">
+            <a href="./Certificates/Coursera ESI 2.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera ESI 2_page-0001.jpg" alt="Profession Skills Certificate">
+              <div class="caption">Critical Thinking Skills</div>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="./Certificates/Coursera ESI 4.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera ESI 4_page-0001.jpg" alt="Profession Skills Certificate">
+              <div class="caption">The Growth Mindset</div>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="./Certificates/Coursera ESI 1.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera ESI 1_page-0001.jpg" alt="Profession Skills Certificate">
+              <div class="caption">Adaptability and Resiliency</div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="division">
+        <h3 class="center_heading">Meta Front-End Developer Certifications</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Coursera Meta FR 1.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Meta FR 1_page-0001.jpg" alt="Front-End Developer Certificate">
+              <div class="caption">Introduction to Front-End Development</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+          <div class="certificate">
+            <a href="./Certificates/Coursera Meta FR 2.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Meta FR 2_page-0001.jpg" alt="Front-End Developer Certificate">
+              <div class="caption">Programming with JavaScript</div>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="./Certificates/Coursera Meta FR 3.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Meta FR 3_page-0001.jpg" alt="Front-End Developer Certificate">
+              <div class="caption">Version Control</div>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="./Certificates/Coursera Meta FR 4.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Meta FR 4_page-0001.jpg" alt="Front-End Developer Certificate">
+              <div class="caption">HTML and CSS in depth</div>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="./Certificates/Coursera Meta FR 9.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Meta FR 9_page-0001.jpg" alt="Front-End Developer Certificate">
+              <div class="caption">Coding Interview Preparation</div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="division">
+        <h3 class="center_heading">Meta Back-End Developer Certifications</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Coursera Meta BR 1.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Meta BR 1_page-0001.jpg" alt="Back-End Developer Certificate">
+              <div class="caption">Introduction to Back-End Development</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+          <div class="certificate">
+            <a href="./Certificates/Coursera Meta BR 4.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Meta BR 4_page-0001.jpg" alt="Back-End Developer Certificate">
+              <div class="caption">Introduction to Databases for Back-End Development</div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+  
+      <div class="division">
+        <h3 class="center_heading">Google Data Analytics Certifications</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Coursera Google DA 1.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Google DA 1_page-0001.jpg" alt=" Data Analytics Certificate">
+              <div class="caption">Foundations: Data, Data, Everywhere</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+          <div class="certificate">
+            <a href="./Certificates/Coursera Google DA 2.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera Google DA 2_page-0001.jpg" alt=" Data Analytics Certificate">
+              <div class="caption">Ask Questions to Make Data-Driven Decisions</div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="division">
+        <h3 class="center_heading">Google Project Management Certification</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Coursera PM 1.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera PM 1_page-0001.jpg" alt="Project Management Certificate">
+              <div class="caption">Foundations of Project Management</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+        </div>
+      </div>
+  
+      <div class="division">
+        <h3 class="center_heading">Mastering the Art of Learning: UC San Diego and McMaster University Certification</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Coursera.pdf" target="_blank">
+              <img src="./Thumbnails/Coursera_page-0001.jpg" alt="Coursera Certificate">
+              <div class="caption">Learning How to Learn</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+        </div>
+      </div>
+  
+      <div class="division">
+        <h3 class="center_heading">Infosys Springboard Certifications</h3>
+        <div class="certificate-container">
+          <div class="certificate">
+            <a href="./Certificates/Infosys Python Basics.pdf" target="_blank">
+              <img src="./Thumbnails/Infosys Python Basics_page-0001.jpg" alt="Python Basics">
+              <div class="caption">Python Basics</div>
+            </a>
+          </div>
+          <!-- Add more certificates in the same division -->
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+
+ 
